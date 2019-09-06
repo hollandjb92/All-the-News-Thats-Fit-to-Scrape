@@ -1,0 +1,58 @@
+<%- include("./partials/header")%>
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Scrapin' Reddit</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center mb-5">
+      <div>
+        <h2>Top Posts:</h2>
+      </div>
+      <h3 id="title"><%=article.title%></h3>
+      <a id="link" href="<%=article.link%>">See More</a>
+      <p id="date"> <%=article.date.toDateString()%></p>
+
+      <div>
+        <button class="btn btn-primary" id="prev">Prev</button>
+        <button class="btn btn-primary" id="next">Next</button>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div>
+        <h2>Comments:</h2>
+      </div>
+      <div id="comments">
+        <ul>
+          <% article.comments.forEach(comment => { %>
+          <li> <%=comment.comment%> </li>
+          <% }) %>
+
+        </ul>
+
+      </div>
+
+      <button class="btn btn-danger" id="deleteCommentsButton">Delete</button>
+    </div>
+
+    <div class="col-6">
+      <div>
+        <h2>Add a comment:</h2>
+      </div>
+
+      <input type="text" class="form-control" id="newComment">
+      <button class="btn btn-primary" type="submit" id="addCommentButton">Add</button>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<%- include("./partials/footer") %>

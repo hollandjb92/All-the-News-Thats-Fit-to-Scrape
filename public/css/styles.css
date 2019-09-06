@@ -1,0 +1,32 @@
+body::after {
+  background: url("https://www.pixeden.com/media/k2/galleries/165/002-subtle-light-pattern-background-texture-vol5.jpg");
+  content: "";
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#comments {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#comments ul li:nth-child(odd) {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#newComment {
+  margin: 10px 0;
+}
