@@ -1,3 +1,7 @@
+body {
+  font-family: "Open Sans Condensed";
+}
+
 body::after {
   background: url("https://www.pixeden.com/media/k2/galleries/165/002-subtle-light-pattern-background-texture-vol5.jpg");
   content: "";
@@ -8,6 +12,28 @@ body::after {
   right: 0;
   left: 0;
   z-index: -1;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 180%;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+
+.jumbotron {
+  background: transparent;
+}
+
+#newComment {
+  margin: 10px 0;
 }
 
 #comments {
@@ -23,10 +49,14 @@ body::after {
   background-color: #ddd;
 }
 
-ul {
-  list-style-type: none;
+
+
+#date {
+  font-size: 120%;
 }
 
-#newComment {
-  margin: 10px 0;
+.btn {
+  box-shadow: none !important;
+  width: 15%;
+
 }

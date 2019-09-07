@@ -3,6 +3,7 @@
 <div class="container">
   <div class="jumbotron text-center">
     <h1>Scrapin' Reddit</h1>
+    <a class="btn btn-primary" href="/articles">See All Articles</a>
   </div>
 
   <div class="row">
@@ -15,8 +16,8 @@
       <p id="date"> <%=article.date.toDateString()%></p>
 
       <div>
-        <button class="btn btn-primary" id="prev">Prev</button>
-        <button class="btn btn-primary" id="next">Next</button>
+        <button class="btn btn-primary btn-lg" id="prev" class="mr-5 shadow-none">Prev</button>
+        <button class="btn btn-primary btn-lg" id="next">Next</button>
       </div>
     </div>
 
@@ -34,7 +35,7 @@
 
       </div>
 
-      <button class="btn btn-danger" id="deleteCommentsButton">Delete</button>
+      <button class="btn btn-danger btn-lg" id="deleteCommentsButton">Delete</button>
     </div>
 
     <div class="col-6">
@@ -43,7 +44,7 @@
       </div>
 
       <input type="text" class="form-control" id="newComment">
-      <button class="btn btn-primary" type="submit" id="addCommentButton">Add</button>
+      <button class="btn btn-primary btn-lg" type="submit" id="addCommentButton">Add</button>
     </div>
 
 
